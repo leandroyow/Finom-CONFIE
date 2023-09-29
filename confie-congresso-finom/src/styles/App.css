@@ -1,3 +1,62 @@
-nav {
-    background-color: black;
+:root {
+    --blue-light-1: #9ce3ff;
+    --blue-light-2: #75c8e8;
+    --blue-medium-1: #1f7292;
+    --blue-medium-2: #014f6d;
+    --dark-blue: #012c3d;
 }
+
+.app-container {
+     background-color: var(--blue-medium-1); 
+
+}
+
+nav {
+    background-color: var(--dark-blue);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color: var(--blue-medium-1);
+    -webkit-box-shadow: 2px 12px 30px -9px rgba(1,79,109,1);
+    -moz-box-shadow: 2px 12px 30px -9px rgba(1,79,109,1);
+    box-shadow: 2px 12px 30px -9px rgba(1,79,109,1);
+}
+
+.logo {
+    width: 150px;
+    height: 41px;
+}
+
+.titulo-patrocina {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apoio-realizacao-container {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.apoio-realizacao-img-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 1rem;
+
+}
+
+.programacao-container {
+    background-color: var(--blue-medium-2);
+}
+
+.programacao-container h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.palestrantes-container {
+    padding: 1rem;
+}
+
+
