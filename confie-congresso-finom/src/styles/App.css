@@ -6,6 +6,10 @@
     --dark-blue: #012c3d;
 }
 
+#roott {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .app-container {
      background-color: var(--blue-medium-1); 
 
@@ -29,7 +33,6 @@ nav {
 
 .titulo-patrocina {
     color: white;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .apoio-realizacao-container {
@@ -51,7 +54,6 @@ nav {
 }
 
 .programacao-container h2 {
-    font-family: 'Montserrat', sans-serif;
     color: white;
 }
 
@@ -59,4 +61,7 @@ nav {
     padding: 1rem;
 }
 
+.btn-inscricao:hover {
+    color: black;
+}
 
