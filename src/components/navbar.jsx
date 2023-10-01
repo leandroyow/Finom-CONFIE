@@ -42,7 +42,7 @@ export function Navbar() {
   ></i>
  
 
-<div className="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+<div className="offcanvas offcanvas-end" data-bs-scroll="true" tabIndex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
   <div className="offcanvas-header">
     <h5 className="offcanvas-title ms-3 fs-1" id="offcanvasWithBothOptionsLabel">
       Menu
