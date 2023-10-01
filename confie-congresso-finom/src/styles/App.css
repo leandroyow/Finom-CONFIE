@@ -1,3 +1,5 @@
+
+
 :root {
     --blue-light-1: #9ce3ff;
     --blue-light-2: #75c8e8;
@@ -5,16 +7,13 @@
     --blue-medium-2: #014f6d;
     --dark-blue: #012c3d;
 }
-
 #roott {
     font-family: 'Montserrat', sans-serif;
 }
-
 .app-container {
      background-color: var(--blue-medium-1); 
 
 }
-
 nav {
     background-color: var(--dark-blue);
     height: 60px;
@@ -25,43 +24,122 @@ nav {
     -moz-box-shadow: 2px 12px 30px -9px rgba(1,79,109,1);
     box-shadow: 2px 12px 30px -9px rgba(1,79,109,1);
 }
-
 .logo {
     width: 150px;
     height: 41px;
 }
-
 .titulo-patrocina {
     color: white;
 }
-
 .apoio-realizacao-container {
     display: flex;
     justify-content: space-around;
     
 }
-
 .apoio-realizacao-img-container {
     display: flex;
     width: 100%;
     justify-content: flex-start;
+    flex-wrap: wrap;
     gap: 1rem;
-
 }
-
 .programacao-container {
     background-color: var(--blue-medium-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
-
 .programacao-container h2 {
     color: white;
 }
-
 .palestrantes-container {
     padding: 1rem;
 }
-
-.btn-inscricao:hover {
-    color: black;
+.btn-outline-light {
+    font-size: large !important;
+    font-weight: 500 !important;
+    border-radius: 25px !important;
+    
+}
+.btn-outline-light:hover {
+    color: #1f7292 !important;
+}
+.nav-link {
+    color: white !important;
+}
+.nav-link:hover {
+    color: white !important;
+    color: var(--blue-light-1) !important;
+}
+.line {
+    background-color: var(--dark-blue);
+    width: 80%;
+    height: 3px;
+}
+.fa-envelope, .fa-regular {
+ color: white;
+ height: 15px;
+}
+.bi .bi-telephone {
+    color: white;
+    background-color: white;
+}
+.email, .phone {
+    color: white;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.patrocinadores {
+    height: 180px;
+    background-color: var(--blue-medium-1);
+    border-radius: 30px 30px 0 0;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.patrocinadores h6 {
+    color: whitesmoke;
+    padding-bottom: 1.5rem;
+}
+.patrocinadores div {
+    flex-wrap: wrap;
+}
+.patrocinadores div img {
+    height: 60px;
+    
+}
+footer {
+    background-color: var(--dark-blue);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2rem;
+    border-radius: 30px 30px 0 0;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+footer div h5 {
+    color: white;
 }
 
+@media (min-width: 411px) {
+    .footer {
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+    .apoio-realizacao-img-container {
+        justify-content: center;
+    }
+    #logo-finom {
+        width: 130px !important;
+        height: 50px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    #texto-apoio, #texto-realizacao  {
+        text-align: center !important;
+        
+    }
+}
