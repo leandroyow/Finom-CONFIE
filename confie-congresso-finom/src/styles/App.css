@@ -12,7 +12,6 @@
 }
 .app-container {
      background-color: var(--blue-medium-1); 
-
 }
 nav {
     background-color: var(--dark-blue);
@@ -39,9 +38,11 @@ nav {
 .apoio-realizacao-img-container {
     display: flex;
     width: 100%;
-    justify-content: flex-start;
+
     flex-wrap: wrap;
     gap: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .programacao-container {
     background-color: var(--blue-medium-2);
@@ -135,11 +136,17 @@ footer div h5 {
         width: 130px !important;
         height: 50px !important;
     }
+    #logo-fonseca {
+        width: 100px !important;
+    }
 }
 
 @media (max-width: 767px) {
     #texto-apoio, #texto-realizacao  {
         text-align: center !important;
         
+    }
+    #logo-fonseca {
+        width: 100px !important;
     }
 }
