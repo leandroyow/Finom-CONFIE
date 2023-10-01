@@ -132,6 +132,34 @@ footer {
 footer div h5 {
     color: white;
 }
+#icon-menu {
+    color: white !important;
+}
+#menu-mobile {
+    color: var(--blue-light-1) !important;
+    cursor: pointer;
+    size: 40px !important;
+    padding-left: 2rem !important;
+}
+.offcanvas {
+    background-color: var(--dark-blue) !important;
+}
+.offcanvas-title {
+    background-color: var(--dark-blue) !important;
+    
+}
+.offcanvas-header {
+    background-color: var(--dark-blue) !important;
+    color: white !important;
+    font-weight: 800 !important;
+    
+}
+.offcanvas-body {
+    background-color: var(--dark-blue);
+}
+.btn-close {
+    background: var(--blue-light-2) var(--bs-btn-close-bg) center/1em auto no-repeat !important;
+}
 
 @media (min-width: 411px) {
     .footer {
@@ -160,6 +188,10 @@ footer div h5 {
         height: 75px !important;
     }
 }
+
+@media (max-width: 565px) { 
+    
+}
 @media (max-width: 767px) {
     #texto-apoio, #texto-realizacao  {
         text-align: center !important;
@@ -175,5 +207,4 @@ footer div h5 {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
-
 }
