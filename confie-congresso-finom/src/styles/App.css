@@ -1,11 +1,12 @@
-
-
 :root {
     --blue-light-1: #9ce3ff;
     --blue-light-2: #75c8e8;
     --blue-medium-1: #1f7292;
     --blue-medium-2: #014f6d;
     --dark-blue: #012c3d;
+}
+html {
+    width: 100%;
 }
 #roott {
     font-family: 'Montserrat', sans-serif;
@@ -18,10 +19,15 @@ nav {
     height: 60px;
     display: flex;
     align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
     color: var(--blue-medium-1);
     -webkit-box-shadow: 2px 12px 30px -9px rgba(1,79,109,1);
     -moz-box-shadow: 2px 12px 30px -9px rgba(1,79,109,1);
     box-shadow: 2px 12px 30px -9px rgba(1,79,109,1);
+}
+nav div {
+    gap: 1rem;
 }
 .logo {
     width: 150px;
@@ -29,16 +35,16 @@ nav {
 }
 .titulo-patrocina {
     color: white;
+    text-align: center;
 }
 .apoio-realizacao-container {
     display: flex;
     justify-content: space-around;
-    
+    flex-wrap: wrap;
 }
 .apoio-realizacao-img-container {
     display: flex;
     width: 100%;
-
     flex-wrap: wrap;
     gap: 1rem;
     align-items: center;
@@ -77,9 +83,12 @@ nav {
     width: 80%;
     height: 3px;
 }
+.contact-container {
+    height: 40px;
+    align-items: center;
+}
 .fa-envelope, .fa-regular {
  color: white;
- height: 15px;
 }
 .bi .bi-telephone {
     color: white;
@@ -141,6 +150,16 @@ footer div h5 {
     }
 }
 
+@media (max-width: 449px) {
+    #finom-logo-cima {
+        width: 140px !important;
+        height: 70px !important;
+    }
+    #colegio-logo-cima {
+        width: 140px !important;
+        height: 75px !important;
+    }
+}
 @media (max-width: 767px) {
     #texto-apoio, #texto-realizacao  {
         text-align: center !important;
@@ -149,4 +168,12 @@ footer div h5 {
     #logo-fonseca {
         width: 100px !important;
     }
+
+}
+@media (max-width: 726px) {
+    nav {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
 }

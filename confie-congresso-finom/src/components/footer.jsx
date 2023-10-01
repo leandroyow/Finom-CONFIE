@@ -18,12 +18,12 @@ export function Footer() {
     <div style={{alignItems: "baseline"}} className="d-flex flex-column">
       <h5 className="fw-bold pb-3">Entre em contato</h5>
 
-      <div className="d-flex gap-2 align-items-center" style={{height: 30}}>
+      <div className="d-flex gap-2 contact-container">
       <i className="bi bi-telephone text-white"></i>
       <p className="phone text-white">(34) 92919459</p>
       </div>
 
-      <div className="d-flex gap-2" style={{height: 30}}>
+      <div className="d-flex gap-2 align-items-center" style={{height: 30}}>
       <i className="fa-regular fa-envelope"></i>
       <p className="email">congressoconfie2023@finom.edu.br</p>
       </div>

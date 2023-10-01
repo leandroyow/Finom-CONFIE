@@ -19,12 +19,14 @@ export function Apoio_e_Realizacao() {
         <img
           style={{ height: 75, width: 190 }}
           src=".\src\assets\finom-branco.png"
-          alt="Fonseca Rodrigues Logo"
+          alt="Finom"
+          id="finom-logo-cima"
         />
         <img
           style={{ height: 80, width: 140 }}
           src=".\src\assets\fonseca-branco.png"
-          alt="FIEMG Logo"
+          alt="Colégio Fonseca Rodrigues"
+          id="colegio-logo-cima"
         />
       </div>
     </div>

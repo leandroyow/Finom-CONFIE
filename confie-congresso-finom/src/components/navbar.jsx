@@ -1,6 +1,6 @@
 export function Navbar() {
   return (
-    <nav className="nav d-flex justify-content-between ps-5 pe-5">
+    <nav className="d-flex justify-content-between">
     <img
       className="logo ms-3"
       src=".\src\assets\logo.png"
