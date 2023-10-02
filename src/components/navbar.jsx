@@ -28,7 +28,7 @@ export function Navbar() {
         <nav className="d-flex justify-content-between">
         <img
           className="logo ms-3"
-          src="./src/assets/logo.png"
+          src="/src/assets/logo.png"
           alt="CONFIE LOGO"
         />
     
