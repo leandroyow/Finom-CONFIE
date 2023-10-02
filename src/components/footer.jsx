@@ -53,13 +53,13 @@ export function Footer() {
       <h3 className="fw-bold text-white fs-6" id="texto-realizacao">Realização</h3>
       <div className="apoio-realizacao-img-container pb-1">
         <img
-          style={{ height: 60, width: 160 }}
+          style={{ height: 60, width: 210 }}
           src="/assets/finom-branco.png"
           alt="Finom Logo"
           id="logo-finom-footer"
         />
         <img
-          style={{ height: 150, width: 160 }}
+          style={{ height: 150, width: 200 }}
           src="/assets/fonseca-branco.png"
           alt="Colégio Fonseca Rodrigues"
           id="logo-fonseca-footer"
