@@ -15,14 +15,14 @@ export function Programacao() {
               </div>
               <div className="carousel-item">
                 <img
-                  src="./src/assets/dia-2.jpg"
+                  src="/src/assets/dia-2.jpg"
                   className="d-block w-100"
                   alt="Programação Dia 2"
                 />
               </div>
               <div className="carousel-item">
                 <img
-                  src="./src/assets/dia-3.jpg"
+                  src="/src/assets/dia-3.jpg"
                   className="d-block w-100"
                   alt="Programação Dia 3"
                 />
