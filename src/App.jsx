@@ -11,7 +11,7 @@ export default function App() {
       <Navbar/>
       <div>
         <img
-          className="img-fluid"
+          className="img-fluid banner-main"
           src="/assets/bannerMain.jpg"
           alt="Congresso CONFIE Banner"
         />

@@ -143,6 +143,7 @@ footer div h5 {
 }
 .offcanvas {
     background-color: var(--dark-blue) !important;
+    max-width: 70% !important;
 }
 .offcanvas-title {
     background-color: var(--dark-blue) !important;
@@ -189,8 +190,27 @@ footer div h5 {
     }
 }
 
-@media (max-width: 565px) { 
-    
+@media (max-width: 664px) { 
+    .titulo-patrocina {
+        font-size: medium;
+    }
+    .apoio-realizacao-img-container img {
+        height: 70px !important;
+        width: 120px !important;
+    }
+    .banner-main {
+        height: 390px !important;
+
+    }
+    nav {
+        height: 85px;
+    }
+    #programacao {
+        margin: 6px !important;
+        margin-bottom: 3rem !important;
+        margin-top: 2rem !important;
+    }
+
 }
 @media (max-width: 767px) {
     #texto-apoio, #texto-realizacao  {
