@@ -8,7 +8,7 @@ export function Programacao() {
             <div className="carousel-inner">
               <div className="carousel-item active">
                 <img
-                  src="Finom-CONFIE/src/assets/dia-1.jpg"
+                  src="/src/assets/dia-1.jpg"
                   className="d-block w-100"
                   alt="Programação Dia 1"
                 />
