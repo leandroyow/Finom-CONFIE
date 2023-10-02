@@ -183,15 +183,16 @@ footer div h5 {
         width: 210px !important;
         height: 70px !important;
     }
-    #colegio-logo-cima {
-        width: 210px !important;
-        height: 160px !important;
-    }
+
 }
 @media (max-width: 578px) {
-     #fiemg-logo-cima, #colegio-logo-cima  {
-        width: 150px !important;
+     #fiemg-logo-cima  {
+        width: 170px !important;
         height: 110px !important;
+    }
+    #colegio-logo-cima {
+        width: 190px !important;
+        height: 160px !important;
     }
     #sebrae-logo-cima {
         width: 140px !important;

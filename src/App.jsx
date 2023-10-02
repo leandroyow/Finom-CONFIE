@@ -4,15 +4,23 @@ import { Footer } from "./components/footer";
 import { Navbar } from "./components/navbar";
 import { Programacao } from "./components/programacao";
 import { Apoio_e_Realizacao } from "./components/apoio-e-realizacao";
+import { useMediaQuery } from "react-responsive"
 
 export default function App() {
+
+  const isLessThan642 = useMediaQuery({
+    query: '(max-width: 642px)'
+  })
+
+
   return (
     <div className="app-container">
       <Navbar/>
       <div>
         <img
-          className="img-fluid banner-main"
-          src="/assets/bannerMain.jpg"
+          className="img-fluid"
+          src={!isLessThan642 ? "assets/bannerMain.jpg"
+        : "assets/bannerMobile-3.jpg"}
           alt="Congresso CONFIE Banner"
         />
       </div>
