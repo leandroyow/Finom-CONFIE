@@ -12,7 +12,7 @@ export default function App() {
       <div>
         <img
           className="img-fluid"
-          src="Finom-CONFIE\src\assets\bannerMain.jpg"
+          src="src\assets\bannerMain.jpg"
           alt="Congresso CONFIE Banner"
         />
       </div>
