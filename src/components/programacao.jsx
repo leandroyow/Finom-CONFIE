@@ -8,21 +8,21 @@ export function Programacao() {
             <div className="carousel-inner">
               <div className="carousel-item active">
                 <img
-                  src="/src/assets/dia-1.jpg"
+                  src="/assets/dia-1.jpg"
                   className="d-block w-100"
                   alt="Programação Dia 1"
                 />
               </div>
               <div className="carousel-item">
                 <img
-                  src="/src/assets/dia-2.jpg"
+                  src="/assets/dia-2.jpg"
                   className="d-block w-100"
                   alt="Programação Dia 2"
                 />
               </div>
               <div className="carousel-item">
                 <img
-                  src="/src/assets/dia-3.jpg"
+                  src="/assets/dia-3.jpg"
                   className="d-block w-100"
                   alt="Programação Dia 3"
                 />
