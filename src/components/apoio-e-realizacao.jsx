@@ -7,7 +7,7 @@ export function Apoio_e_Realizacao() {
         <img src="./src/assets/sebrae.webp" alt="SEBRAE Logo" />
         <img
           style={{ height: 75, width: 130 }}
-          src="./src/assets/fiemg.webp"
+          src="src\assets\fiemg.webp"
           alt="FIEMG Logo"
         />
       </div>
