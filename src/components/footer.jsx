@@ -59,7 +59,7 @@ export function Footer() {
           id="logo-finom-footer"
         />
         <img
-          style={{ height: 150, width: 140 }}
+          style={{ height: 150, width: 160 }}
           src="/assets/fonseca-branco.png"
           alt="Colégio Fonseca Rodrigues"
           id="logo-fonseca-footer"
