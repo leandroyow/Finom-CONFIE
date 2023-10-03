@@ -20,7 +20,7 @@ export default function App() {
         <img
           className="img-fluid"
           src={!isLessThan642 ? "assets/bannerMain.jpg"
-        : "assets/bannerMobile-3.jpg"}
+        : "assets/bannerMobile-9.jpg"}
           alt="Congresso CONFIE Banner"
         />
       </div>
