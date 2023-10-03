@@ -114,6 +114,7 @@ nav div {
 }
 .patrocinadores div {
     flex-wrap: wrap;
+    align-items: center;
 }
 .patrocinadores div img {
     height: 60px;

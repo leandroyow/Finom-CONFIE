@@ -41,7 +41,7 @@ export function Footer() {
   <img 
   src="/assets/sebrae-logo-0.png"
    alt="SEBRAE Logo"
-   style={{height: 85, width: 180}}
+   style={{height: 120, width: 180}}
     />
   <img
     style={{ height: 85, width: 180 }}

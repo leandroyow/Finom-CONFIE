@@ -11,7 +11,7 @@ export function Apoio_e_Realizacao() {
         style={{height: 150, width: 220}}
         />
         <img
-          style={{ height: 150, width: 220 }}
+          style={{ height: 150, width: 250 }}
           src="/assets/fiemg.webp"
           alt="FIEMG Logo"
           id="fiemg-logo-cima"
