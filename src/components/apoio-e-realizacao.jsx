@@ -1,38 +1,44 @@
+import { useMediaQuery } from "react-responsive"
+
 export function Apoio_e_Realizacao() {
+
+  const isLessThan890 = useMediaQuery({
+    query: '(max-width: 1280px)'
+  })
+  const isLessThan372 = useMediaQuery ({
+    query: '(max-width: 372px'
+  })
+
   return (
     <div className="apoio-realizacao-container">
     <div>
-      <h3 className="p-3 titulo-patrocina fw-bold">Apoio</h3>
-      <div className="p-3 apoio-realizacao-img-container">
+      <h3 className="pt-3 pb-3 titulo-patrocina fw-bold">Apoio</h3>
+      <div className="ps-2 pe-2 gap-4 apoio-realizacao-img-container">
         <img 
-        src="/assets/sebrae-logo-0.png" 
+        src={!isLessThan372 ? "/assets/sebrae-3.png" : "/assets/sebrae-2.png" }
         alt="SEBRAE Logo" 
-        id="sebrae-logo-cima"
-        style={{height: 150, width: 220}}
         />
         <img
-          style={{ height: 150, width: 250 }}
-          src="/assets/fiemg.webp"
+
+          src={!isLessThan890 ? "/assets/fiemg-2.png" : "/assets/fiemg-4.png"}
           alt="FIEMG Logo"
-          id="fiemg-logo-cima"
+
         />
       </div>
     </div>
 
     <div>
-      <h3 className="p-3 titulo-patrocina fw-bold">Realização</h3>
-      <div className="p-3 apoio-realizacao-img-container">
+      <h3 className="pt-2 pb-2 titulo-patrocina fw-bold">Realização</h3>
+      <div className="ps-2 pe-2 apoio-realizacao-img-container">
         <img
-          style={{ height: 75, width: 280 }}
-          src="/assets/finom-branco.png"
+          
+          src="/assets/finom-2.png"
           alt="Finom"
-          id="finom-logo-cima"
+          
         />
         <img
-          style={{ height: 150, width: 250 }}
-          src="/assets/fonseca-branco.png"
+          src="/assets/colegio-branco-2.png"
           alt="Colégio Fonseca Rodrigues"
-          id="colegio-logo-cima"
         />
       </div>
     </div>

@@ -22,9 +22,6 @@ nav {
     padding-left: 3rem;
     padding-right: 3rem;
     color: var(--blue-medium-1);
-    -webkit-box-shadow: 2px 12px 30px -9px rgba(1,79,109,1);
-    -moz-box-shadow: 2px 12px 30px -9px rgba(1,79,109,1);
-    box-shadow: 2px 12px 30px -9px rgba(1,79,109,1);
 }
 nav div {
     gap: 1rem;

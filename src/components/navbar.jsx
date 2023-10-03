@@ -16,7 +16,7 @@ export function Navbar() {
         alt="CONFIE LOGO"
       />
   
-      <div className="d-flex">
+      <div className="d-flex me-3">
         <a className="fs-8 fw-medium nav-link" href="#programacao">Programação</a>
         <a className="fs-8 fw-medium nav-link" href="#contato">Contato</a>
         <a className="fs-8 fw-medium nav-link" href="#inscricao">Inscreva-se</a>

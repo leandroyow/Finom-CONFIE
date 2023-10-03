@@ -1,4 +1,14 @@
+import { useMediaQuery } from "react-responsive"
+
 export function Footer() {
+
+const isLessThan637 = useMediaQuery({
+  query: '(max-width: 637px)'
+})
+const isLessThan436 = useMediaQuery({
+  query: '(max-width: 436px)'
+})
+
   return ( 
 
     <>
@@ -10,9 +20,9 @@ export function Footer() {
       <div className="d-flex justify-content-around gap-3">
         <img src="/assets/sicoob.png" alt="Sicoob" />
         <img 
-        src="/assets/fiemg.webp" 
+        src={!isLessThan637 ?  "/assets/fiemg-2.png" : "/assets/fiemg-1.webp"} 
         alt="FIEMG"
-        style={{height: 110}}
+        
         />
       </div>
     </div>
@@ -24,7 +34,7 @@ export function Footer() {
 
       <div className="d-flex gap-2 contact-container">
       <i className="bi bi-telephone text-white"></i>
-      <p className="phone text-white">(34) 92919459</p>
+      <p className="phone text-white">(34) 3823-3933</p>
       </div>
 
       <div className="d-flex gap-2 align-items-center" style={{height: 30}}>
@@ -39,13 +49,12 @@ export function Footer() {
     <h3 className="fw-bold text-white fs-6 mb-3">Apoio</h3>
     <div className="apoio-realizacao-img-container mb-5">
   <img 
-  src="/assets/sebrae-logo-0.png"
+  src={!isLessThan436 ? "/assets/sebrae-3.png" : "/assets/sebrae-2.png"}
    alt="SEBRAE Logo"
-   style={{height: 120, width: 180}}
+   
     />
   <img
-    style={{ height: 85, width: 180 }}
-    src="/assets/fiemg.webp"
+    src="/assets/fiemg-4.png"
     alt="FIEMG Logo"
   />
 </div>
@@ -53,16 +62,14 @@ export function Footer() {
       <h3 className="fw-bold text-white fs-6" id="texto-realizacao">Realização</h3>
       <div className="apoio-realizacao-img-container pb-1">
         <img
-          style={{ height: 60, width: 210 }}
-          src="/assets/finom-branco.png"
+          
+          src="/assets/finom-2.png"
           alt="Finom Logo"
-          id="logo-finom-footer"
+          
         />
         <img
-          style={{ height: 150, width: 200 }}
-          src="/assets/fonseca-branco.png"
+          src="/assets/colegio-branco-2.png"
           alt="Colégio Fonseca Rodrigues"
-          id="logo-fonseca-footer"
         />
       </div>
     </div>
