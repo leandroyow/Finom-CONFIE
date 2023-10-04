@@ -12,15 +12,15 @@ export function Apoio_e_Realizacao() {
   return (
     <div className="apoio-realizacao-container">
     <div>
-      <h3 className="pt-3 pb-3 titulo-patrocina fw-bold">Apoio</h3>
+      <h3 className="pt-2 pb-2 titulo-patrocina fw-bold">Apoio</h3>
       <div className="ps-2 pe-2 gap-4 apoio-realizacao-img-container">
         <img 
-        src={!isLessThan372 ? "/assets/sebrae-3.png" : "/assets/sebrae-2.png" }
+        src={!isLessThan372 ? "assets/sebrae-3.png" : "assets/sebrae-2.png" }
         alt="SEBRAE Logo" 
         />
         <img
 
-          src={!isLessThan890 ? "/assets/fiemg-2.png" : "/assets/fiemg-4.png"}
+          src={!isLessThan890 ? "assets/fiemg-2.png" : "assets/fiemg-4.png"}
           alt="FIEMG Logo"
 
         />
@@ -32,12 +32,12 @@ export function Apoio_e_Realizacao() {
       <div className="ps-2 pe-2 apoio-realizacao-img-container">
         <img
           
-          src="/assets/finom-2.png"
+          src="assets/finom-2.png"
           alt="Finom"
           
         />
         <img
-          src="/assets/colegio-branco-2.png"
+          src="assets/colegio-branco-2.png"
           alt="Colégio Fonseca Rodrigues"
         />
       </div>
