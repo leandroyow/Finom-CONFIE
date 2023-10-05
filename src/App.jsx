@@ -8,10 +8,7 @@ import { useMediaQuery } from "react-responsive"
 
 export default function App() {
 
-  const isLessThan642 = useMediaQuery({
-    query: '(max-width: 642px)'
-  })
-
+  const isLessThan642 = useMediaQuery({query: '(max-width: 642px)'})
 
   return (
     <div className="app-container">
