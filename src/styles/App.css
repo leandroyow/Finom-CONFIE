@@ -9,7 +9,6 @@
 html {
   width: 100%;
 }
-
 #root {
   font-family: "Montserrat", sans-serif;
 }
@@ -174,20 +173,14 @@ footer div h5 {
   background-color: var(--dark-blue ) !important;
   
 }
-
 .container {
   background-color: var(--blue-medium-1) !important;
   width: min-content;
 }
-.container-swipes {
-  background-color: white;
-  height: 200px;
-  display: flex;
-  align-items: center;
-}
 .card {
   background-color: white !important;
   border: none !important;
+  width: min-content;
 }
 .card-text {
   height: 50px;
@@ -217,12 +210,33 @@ footer div h5 {
 .card-body {
   height: 190px;
 }
-swiper-slide {
-  width: 410px !important;
-}
 swiper-container {
+  background-color: white !important;
+  height: 210px !important;
+  position: relative;
+  width: 100%;
+  padding: 0 20px;
+}
+swiper-container swiper {
   width: 100%;
 }
+.swiper-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+}
+.swiper-slide {
+  width: 410px !important;
+}
+.fa-circle-arrow-right, 
+.fa-circle-arrow-left {
+  font-size: 45px;
+  color: white;
+}
+.fa-circle-arrow-right:hover, 
+.fa-circle-arrow-left:hover {
+  color: var(--dark-blue);
+}
+
 @media (min-width: 411px) {
   .footer {
     padding-left: 5% !important;
@@ -230,33 +244,6 @@ swiper-container {
   }
   .apoio-realizacao-img-container {
     justify-content: center;
-  }
-  #logo-finom-footer {
-    width: 200px !important;
-    height: 50px !important;
-  }
-  #logo-fonseca-footer {
-    width: 230px !important;
-  }
-}
-@media (max-width: 449px) {
-  #finom-logo-cima {
-    width: 210px !important;
-    height: 70px !important;
-  }
-}
-@media (max-width: 578px) {
-  #fiemg-logo-cima {
-    width: 170px !important;
-    height: 110px !important;
-  }
-  #colegio-logo-cima {
-    width: 190px !important;
-    height: 160px !important;
-  }
-  #sebrae-logo-cima {
-    width: 140px !important;
-    height: 100px !important;
   }
 }
 @media (max-width: 664px) {
@@ -279,9 +266,6 @@ swiper-container {
   #texto-apoio,
   #texto-realizacao {
     text-align: center !important;
-  }
-  #logo-fonseca {
-    width: 100px !important;
   }
 }
 @media (max-width: 726px) {
