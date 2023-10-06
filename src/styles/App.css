@@ -236,7 +236,10 @@ swiper-container swiper {
 .fa-circle-arrow-left:hover {
   color: var(--dark-blue);
 }
-
+.btn-outline-dark {
+  border-radius: 25px !important;
+  font-weight: 600 !important; 
+}
 @media (min-width: 411px) {
   .footer {
     padding-left: 5% !important;
@@ -273,4 +276,58 @@ swiper-container swiper {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+}
+@media (min-width: 2000px) {
+  html {
+    font-size: 180%;
+    max-width: 99vw;
+  }
+  nav {
+    height: 100px;
+  }
+  swiper-container {
+    height: 350px !important;
+  }
+  .swiper-slide {
+    width: 520px !important;
+  }
+  .btn-outline-dark {
+    width: 100% !important;
+  }
+  .card, .swiper-slide {
+    width: 540px !important;
+  }
+  .card-title {
+    font-size: 32px !important;
+    width: 400px !important;
+    margin-bottom: 5px !important;
+    padding-bottom: 0 !important;
+  }
+  .card-text {
+    height: 120px !important;
+    width: 330px !important;
+    font-size: 25px;
+  }
+  .img-container {
+    width: 144px !important;
+    height: 144px !important;
+  }
+  .img-container img{
+    width: 144px !important;
+    height: 144px !important;
+  }
+  .card-body {
+    height: 280px;
+    width: 380px;
+  }
+  swiper-slide {
+    display: flex ;
+    align-items: center;
+  }
+  .fa-circle-arrow-right, 
+  .fa-circle-arrow-left {
+    font-size: 80px;
+  }
+
+  
 }

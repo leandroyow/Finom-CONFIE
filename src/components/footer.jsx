@@ -1,16 +1,19 @@
 import { useMediaQuery } from "react-responsive";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
+
 export function Footer() {
+
+  const [modalText, setModalText] = useState("");
+
   const isLessThan637 = useMediaQuery({ query: "(max-width: 637px)" });
   const isLessThan436 = useMediaQuery({ query: "(max-width: 436px)" });
 
   const swiperRef = useRef(null);
-
   const navigationPrevRef = useRef(null)
   const navigationNextRef = useRef(null)
   
@@ -25,9 +28,22 @@ export function Footer() {
 
   return (
     <>
-      <h5 className="titulo-palestrantes fs-4 text-center mt-5 mb-4">
-        Palestrantes
-      </h5>
+
+<div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div className="modal-dialog">
+    <div className="modal-content">
+      <div className="modal-header">
+        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div className="modal-body">
+         <p>{modalText}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <h5 className="titulo-palestrantes
+       fs-4 text-center mt-5 mb-4">Palestrantes</h5>
       <div>
 
       <swiper-container ref={swiperRef}  >
@@ -57,15 +73,21 @@ export function Footer() {
                       alt="Maykell Pereira"
                     />
                   </div>
-                  <div style={{ width: 280, padding: 0 }} className="">
+                  <div style={{ width: 280, padding: 0 }} >
                     <div className="card-body d-flex flex-column justify-content-between">
                       <h5 className="card-title">Maykell Pereira</h5>
-                      <div className="card-text-scroll">
                         <p className="card-text">
                           Diretor de Operações de TI. Auma Tecnologia
                         </p>
-                      </div>
-                      <button className="btn btn-outline-dark">
+                      <button 
+                      type="button"
+                       data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                         className="btn btn-outline-dark"
+                          id="maykell-pereira"
+                          onClick={
+                            () => { setModalText("Maykell é um profissional com uma sólida trajetória na área de Tecnologia da Informação. Sua jornada começou como Estagiário no Laboratório de Informática da UNIPAM e progrediu ao longo dos anos, passando por cargos de Analista de Suporte Técnico e, subsequentemente, Analista de Sistemas. Atualmente, ele desempenha um papel crucial como Diretor de Operações de TI na Auma Tecnologia, onde lidera a entrega de soluções para o agronegócio. Com mais de 7 anos de experiência no Grupo Auma, Maykell demonstra habilidades sólidas em implementação de ERP, gestão de projetos, liderança técnica e soluções agro, tornando-o um ativo valioso na indústria de tecnologia.")}}
+                          >
                         Conheça-me
                       </button>
                     </div>
@@ -90,7 +112,15 @@ export function Footer() {
                       <p className="card-text">
                       Team Leader na Auma Tecnologia
                       </p>
-                      <button className="btn btn-outline-dark">
+                                            <button 
+                      type="button"
+                       data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                         className="btn btn-outline-dark"
+                          id="carlos-simao"
+                          onClick={
+                            () => { setModalText("Carlos Simão é um Team Leader com mais de 4 anos de experiência na Auma Tecnologia. Ele é especializado em liderar equipes de desenvolvimento e gerenciar projetos de software. Destaca-se por suas habilidades sólidas no desenvolvimento de aplicações para SAP Business One, utilizando a plataforma .NET. Possuí bacharelado em Sistemas de Informação pelo Centro Universitário de Patos de Minas - UNIPAM. Ele também possui certificações importantes, incluindo Scrum Fundamentals Certified (SFC) e Scrum Master Certified (SMC), que atestam sua experiência em metodologias ágeis e práticas de gestão de projetos.")}}
+                          >
                         Conheça-me
                       </button>
                     </div>
@@ -117,7 +147,15 @@ export function Footer() {
                         Soluções Judiciais Cíveis e Trabalhistas, escritório
                         Mírian Gontijo Advogados
                       </p>
-                      <button className="btn btn-outline-dark">
+                                            <button 
+                      type="button"
+                       data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                         className="btn btn-outline-dark"
+                          id="rayanne-pereira"
+                          onClick={
+                            () => { setModalText("Coordenadora da Área de Assessoria Estratégica e Soluções Judiciais Cíveis e Trabalhistas do escritório Mírian Gontijo Advogados. Rayanne é graduada em Direito pela Universidade de Patos de Minas – UNIPAM, inscrita na OAB/MG 153.308, e pós-graduada em Direito Processual Civil e em Direito das Famílias e Sucessões, pelo Centro Educacional Damásio de Jesus. Com quase dez anos de experiência na advocacia contenciosa e preventiva, com visão estratégica cível, trabalhista e empresarial, Rayanne possui ampla experiência  em jurídico corporativo, atuando, atualmente, no assessoramento preventivo e consultivo de empresas privadas e cooperativas agroindustriais e de crédito.")}}
+                          >
                         Conheça-me
                       </button>
                     </div>
@@ -142,7 +180,15 @@ export function Footer() {
                       <p className="card-text">
                         Analista do Ministério Público do Estado de Minas Gerais
                       </p>
-                      <button className="btn btn-outline-dark">
+                                            <button 
+                      type="button"
+                       data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                         className="btn btn-outline-dark"
+                          id="igor-rodrigues"
+                          onClick={
+                            () => { setModalText("Bacharel em Direito Centro no Universitário FIPMOC/UNIFIPMOC. Especialista em Direito Econômico e Empresarial na Universidade Estadual de Montes Claros - Unimontes. Especialista em Direito Eleitoral na Universidade Cândido Mendes. Mestrando em Instituições Sociais, Direito e Democracia na Universidade FUMEC. Analista do Ministério Público do Estado de Minas Gerais")}}
+                          >
                         Conheça-me
                       </button>
                     </div>
@@ -168,7 +214,48 @@ export function Footer() {
                         Analista de Planejamento e Controle de Manutenção, KWS
                         Group
                       </p>
-                      <button className="btn btn-outline-dark">
+                                            <button 
+                      type="button"
+                       data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                         className="btn btn-outline-dark"
+                          id="adriano-macedo"
+                          onClick={
+                            () => { setModalText("Graduado em Engenharia Mecânica pela Faculdade Finom de Patos de Minas - MG. Engenheiro Mecânico com sólida experiência em Planejamento, Programação e Controle de Manutenção, bem como gestão de equipes nas áreas Elétrica, Mecânica e Utilidades. Especializado em start-up de novos ativos e ampla expertise em Controle e Abastecimento da Cadeia de Suprimentos e Almoxarifado. Com vasto conhecimento em Projetos e gerenciamento, destaca-se por liderar equipes, desenvolver pessoas e otimizar Processos de Manutenção.")}}
+                          >
+                        Conheça-me
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="card">
+                <div className="d-flex">
+                  <div className="img-container">
+                    <img
+                      style={{ height: 144, width: 144 }}
+                      src="assets/palestrante (6).jpeg"
+                      className="card-img rounded-circle"
+                      alt="Adriano Chaves Macedo"
+                    />
+                  </div>
+                  <div style={{ width: 280, padding: 0 }} className="">
+                    <div className="card-body d-flex flex-column justify-content-between">
+                      <h5 className="card-title">Higgor Olipe</h5>
+                      <p className="card-text">
+                      Gerente de Automação e Digital, Grupo Setta
+                      </p>
+                                            <button 
+                      type="button"
+                       data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                         className="btn btn-outline-dark"
+                          id="higgor-olipe"
+                          onClick={
+                            () => { setModalText("Higgor é graduado em Engenharia Elétrica e Eletrônica pela Universidade Federal de Uberlândia (UFU), e pós-graduado em Gestão Empresarial pela Fundação Getúlio Vargas. Com uma carreira desenvolvida na área de Gerenciamento de Projetos industriais, desenvolveu atividades na área atuando em empresas dos segmentos de Energia, Fabricação de Equipamentos do setor Elétrico e outras.")}}
+                          >
                         Conheça-me
                       </button>
                     </div>
@@ -193,7 +280,15 @@ export function Footer() {
                       <p className="card-text">
                       Escrivã Judicial, TJMG
                       </p>
-                      <button className="btn btn-outline-dark">
+                                            <button 
+                      type="button"
+                       data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                         className="btn btn-outline-dark"
+                          id="nivia-gontijo"
+                          onClick={
+                            () => { setModalText("Pós-graduada em Direito pelo Centro Universitário de Patos de Minas (UNIPAM), Nívia é Escrivã Judicial no Tribunal Judiciário de Minas Gerais e Professora no curso de Direito na Faculdade Finom de Patos de Minas.")}}
+                          >
                         Conheça-me
                       </button>
                     </div>
@@ -218,7 +313,15 @@ export function Footer() {
                       <p className="card-text">
                         Assessor Pedagógico, Grupo Bernoulli de Educação
                       </p>
-                      <button className="btn btn-outline-dark">
+                                            <button 
+                      type="button"
+                       data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                         className="btn btn-outline-dark"
+                          id="willian-ferreira"
+                          onClick={
+                            () => { setModalText("Formação acadêmica sólida, com Mestrado em Educação Tecnológica e mais de 20 anos de experiência no ensino de Ciências e Biologia, em ambientes formais e informais das esferas pública e privada. Conhecimento amplo de informática e outras tecnologias aplicadas ao ensino, tais como robótica educacional, web design e produção de documentários. Elaboração, gerência e execução de projetos temáticos multi e transdisciplinares e oficinas pedagógicas. Pesquisas recentes voltadas para a construção do pensamento científico, natureza da ciência e instrumentação para o ensino de Ciências e Biologia.")}}
+                          >
                         Conheça-me
                       </button>
                     </div>
@@ -243,7 +346,15 @@ export function Footer() {
                       <p className="card-text">
                       Especialista em planejamento de carreira
                       </p>
-                      <button className="btn btn-outline-dark">
+                                            <button 
+                      type="button"
+                       data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                         className="btn btn-outline-dark"
+                          id="andressa-arielly"
+                          onClick={
+                            () => { setModalText("Psicóloga, especialista em Gestão de Pessoas, Analista comportamental, Executive coaching, Mestre em Educação. Sete anos de experiência em consultoria, desenvolvendo pessoas, líderes e quem busca alta performance. Palestras, treinamentos e workshop em gestão, liderança, performance e planejamento. Uma entusiasta do mundo de empreendedorismo e inovação.")}}
+                          >
                         Conheça-me
                       </button>
                     </div>
@@ -268,9 +379,42 @@ export function Footer() {
                       <p className="card-text">
                       CEO, Construtora Ferreira
                       </p>
-                      <button className="btn btn-outline-dark">
+                                            <button 
+                      type="button"
+                       data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                         className="btn btn-outline-dark"
+                         disabled
+                          id="weber-ferreira"
+                          onClick={
+                            () => { setModalText("Maykell é um profissional com uma sólida trajetória na área de Tecnologia da Informação. Sua jornada começou como Estagiário no Laboratório de Informática da UNIPAM e progrediu ao longo dos anos, passando por cargos de Analista de Suporte Técnico e, subsequentemente, Analista de Sistemas. Atualmente, ele desempenha um papel crucial como Diretor de Operações de TI na Auma Tecnologia, onde lidera a entrega de soluções para o agronegócio. Com mais de 7 anos de experiência no Grupo Auma, Maykell demonstra habilidades sólidas em implementação de ERP, gestão de projetos, liderança técnica e soluções agro, tornando-o um ativo valioso na indústria de tecnologia.")}}
+                          >
                         Conheça-me
                       </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div  style={{color:"white !important", backgroundColor:"white !important", display:"none"}} className="card">
+                <div style={{color:"white !important", backgroundColor:"white !important"}} className="d-flex">
+                  <div style={{color:"white !important", backgroundColor:"white !important"}} className="img-container">
+                    <img
+
+                      style={{ height: 144, width: 144, color:"white !important", backgroundColor:"white !important" }}
+                      src=""
+                      className="card-img rounded-circle"
+                      alt="Weber Ferreira"
+                    />
+                  </div>
+                  <div style={{ width: 280, padding: 0, color:"white !important", backgroundColor:"white !important" }} className="">
+                    <div style={{color:"white !important", backgroundColor:"white !important"}} className="card-body d-flex flex-column justify-content-between">
+                      <h5 style={{color:"white !important", backgroundColor:"white !important"}} ></h5>
+                      <p style={{color:"white !important", backgroundColor:"white !important"}} className="card-text">
+
+                      </p>
+
                     </div>
                   </div>
                 </div>
@@ -294,7 +438,7 @@ export function Footer() {
       <div className="patrocinadores gap-3">
         <h6 className="text-center fs-4 pt-3 fw-bold">Patrocinadores</h6>
         <div className="d-flex justify-content-around gap-3">
-          <img src="assets/sicoob.png" alt="Sicoob" />
+          <img style={{maxWidth: "100vw"}} src="assets/sicoob-mini.png" alt="Sicoob" />
           <img
             src={!isLessThan637 ? "assets/fiemg-2.png" : "assets/fiemg-1.webp"}
             alt="FIEMG"
@@ -312,7 +456,7 @@ export function Footer() {
           </div>
 
           <div
-            className="d-flex gap-2 align-items-center"
+            className="d-flex gap-2 btn-container-swiper align-items-center"
             style={{ height: 30 }}
           >
             <i className="fa-regular fa-envelope"></i>
@@ -333,6 +477,7 @@ export function Footer() {
               alt="SEBRAE Logo"
             />
             <img src="assets/fiemg-4.png" alt="FIEMG Logo" />
+            <img src="assets/BERNOULLI 230X49.png" alt="FIEMG Logo"/>
           </div>
           <div className="pb-5">
             <h3 className="fw-bold text-white fs-6" id="texto-realizacao">

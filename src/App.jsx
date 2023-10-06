@@ -13,7 +13,7 @@ export default function App() {
   return (
     <div className="app-container">
       <Navbar/>
-      <div className="mb-5">
+      <div className="mb-5 main-banner-container text-center">
         <img
           className="img-fluid"
           src={!isLessThan642 ? "assets/bannerMain.jpg"

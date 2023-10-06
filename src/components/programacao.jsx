@@ -4,7 +4,7 @@ export function Programacao() {
       <div id="programacao" className="programacao-container m-5 rounded-2">
           <h2 className="text-center">Programação</h2>
 
-          <div id="carousel-programacao" className="carousel slide">
+          <div id="carousel-programacao" className=" carousel slide">
             <div className="carousel-inner">
               <div className="carousel-item active">
                 <img

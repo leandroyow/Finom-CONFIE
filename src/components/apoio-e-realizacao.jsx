@@ -24,6 +24,12 @@ export function Apoio_e_Realizacao() {
           alt="FIEMG Logo"
 
         />
+        <img
+
+          src="assets/BERNOULLI 230X49.png"
+          alt="FIEMG Logo"
+
+        />
       </div>
     </div>
 
