@@ -115,7 +115,7 @@ nav div {
   flex-wrap: wrap;
   align-items: center;
 }
-.patrocinadores div img {
+.patrocinadores div #fiemg-img {
   height: 60px;
 }
 footer {

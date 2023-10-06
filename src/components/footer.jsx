@@ -1,10 +1,7 @@
 import { useMediaQuery } from "react-responsive";
 import { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/navigation';
-
 
 export function Footer() {
 
@@ -14,16 +11,13 @@ export function Footer() {
   const isLessThan436 = useMediaQuery({ query: "(max-width: 436px)" });
 
   const swiperRef = useRef(null);
-  const navigationPrevRef = useRef(null)
-  const navigationNextRef = useRef(null)
   
   useEffect(() => {
-
+    
     const swiperContainer = swiperRef.current;
     Object.assignswiperContainer;
-    swiperContainer.initialize();
-    
-    
+    swiperContainer.initialize();   
+
   }, []);
 
   return (
@@ -48,16 +42,7 @@ export function Footer() {
 
       <swiper-container ref={swiperRef}  >
         
-          <Swiper 
-          modules={[Navigation]}
-          navigation={{
-            prevEl: navigationPrevRef.current,
-            nextEl: navigationNextRef.current,
-          }}
-         onBeforeInit={(swiper) => {
-              swiper.params.navigation.prevEl = navigationPrevRef.current;
-              swiper.params.navigation.nextEl = navigationNextRef.current;
-         }}>
+          <Swiper>
 
             <swiper-wrapper>
 
@@ -424,22 +409,16 @@ export function Footer() {
           </Swiper >
          
         </swiper-container>
-        <div className="d-flex justify-content-center gap-3 pt-3">
-          <i className="fa-solid fa-circle-arrow-left"
-             role="button"
-             ref={navigationPrevRef} 
-             ></i>
-          <i className="fa-solid fa-circle-arrow-right"
-             role="button"
-             ref={navigationNextRef} ></i>
-         </div>
       </div>
 
       <div className="patrocinadores gap-3">
         <h6 className="text-center fs-4 pt-3 fw-bold">Patrocinadores</h6>
         <div className="d-flex justify-content-around gap-3">
-          <img style={{maxWidth: "100vw"}} src="assets/sicoob-dwarf.png" alt="Sicoob" />
+          <img 
+          src={isLessThan637 ?"assets/sicoob-dwarf.png" : "assets/sicoob-big.png"} 
+          alt="Sicoob" />
           <img
+            id="fiemg-img"
             src={!isLessThan637 ? "assets/fiemg-2.png" : "assets/fiemg-1.webp"}
             alt="FIEMG"
           />

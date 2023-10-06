@@ -2,7 +2,8 @@ import { useMediaQuery } from "react-responsive"
 
 export function Navbar() {
 
-const offcanvas = document.querySelector(".offcanvas")
+const offcanvas = document.querySelector(".offcanvas-mobile-menu")
+console.log(offcanvas)
 const hideMenu = () => {offcanvas.classList.remove("show")}
   const isLessThan581 = useMediaQuery({
     query: '(min-width: 581px)'
@@ -44,7 +45,7 @@ const hideMenu = () => {offcanvas.classList.remove("show")}
   ></i>
  
 
-<div backdrop="false" className="offcanvas offcanvas-end" data-bs-scroll="true" tabIndex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+<div data-bs-backdrop="false" className="offcanvas offcanvas-end offcanvas-mobile-menu" data-bs-scroll="true" tabIndex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
   <div className="offcanvas-header">
     <h5 className="offcanvas-title ms-3 fs-1" id="offcanvasWithBothOptionsLabel">
       Menu
