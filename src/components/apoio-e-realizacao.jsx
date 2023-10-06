@@ -34,7 +34,7 @@ export function Apoio_e_Realizacao() {
     </div>
 
     <div>
-      <h3 className="pt-2 pb-2 titulo-patrocina fw-bold">Realização</h3>
+      <h3 className="pt-2 pb-2 titulo-patrocina t-realizacao fw-bold">Realização</h3>
       <div className="ps-2 pe-2 apoio-realizacao-img-container">
         <img
           

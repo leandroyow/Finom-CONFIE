@@ -398,8 +398,8 @@ export function Footer() {
             </SwiperSlide>
             <SwiperSlide>
               <div  style={{color:"white !important", backgroundColor:"white !important", display:"none"}} className="card">
-                <div style={{color:"white !important", backgroundColor:"white !important"}} className="d-flex">
-                  <div style={{color:"white !important", backgroundColor:"white !important"}} className="img-container">
+                <div  className="d-flex">
+                  <div  className="img-container">
                     <img
 
                       style={{ height: 144, width: 144, color:"white !important", backgroundColor:"white !important" }}
@@ -409,9 +409,9 @@ export function Footer() {
                     />
                   </div>
                   <div style={{ width: 280, padding: 0, color:"white !important", backgroundColor:"white !important" }} className="">
-                    <div style={{color:"white !important", backgroundColor:"white !important"}} className="card-body d-flex flex-column justify-content-between">
-                      <h5 style={{color:"white !important", backgroundColor:"white !important"}} ></h5>
-                      <p style={{color:"white !important", backgroundColor:"white !important"}} className="card-text">
+                    <div  className="card-body d-flex flex-column justify-content-between">
+                      <h5  ></h5>
+                      <p  className="card-text">
 
                       </p>
 
@@ -438,7 +438,7 @@ export function Footer() {
       <div className="patrocinadores gap-3">
         <h6 className="text-center fs-4 pt-3 fw-bold">Patrocinadores</h6>
         <div className="d-flex justify-content-around gap-3">
-          <img style={{maxWidth: "100vw"}} src="assets/sicoob-mini.png" alt="Sicoob" />
+          <img style={{maxWidth: "100vw"}} src="assets/sicoob-dwarf.png" alt="Sicoob" />
           <img
             src={!isLessThan637 ? "assets/fiemg-2.png" : "assets/fiemg-1.webp"}
             alt="FIEMG"
