@@ -3,7 +3,6 @@ import { useMediaQuery } from "react-responsive"
 export function Navbar() {
 
 const offcanvas = document.querySelector(".offcanvas-mobile-menu")
-console.log(offcanvas)
 const hideMenu = () => {offcanvas.classList.remove("show")}
   const isLessThan581 = useMediaQuery({
     query: '(min-width: 581px)'
