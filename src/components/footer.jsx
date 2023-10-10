@@ -353,7 +353,7 @@ export function Footer() {
                   <div className="img-container">
                     <img
                       style={{ height: 144, width: 144 }}
-                      src="assets/palestrante (10).jpeg"
+                      src="assets/weber.jpeg"
                       className="card-img rounded-circle"
                       alt="Weber Ferreira"
                     />
@@ -369,10 +369,10 @@ export function Footer() {
                        data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop"
                          className="btn btn-outline-dark"
-                         disabled
-                          id="weber-ferreira"
+                         id="weber-ferreira"
+                         
                           onClick={
-                            () => { setModalText("Maykell é um profissional com uma sólida trajetória na área de Tecnologia da Informação. Sua jornada começou como Estagiário no Laboratório de Informática da UNIPAM e progrediu ao longo dos anos, passando por cargos de Analista de Suporte Técnico e, subsequentemente, Analista de Sistemas. Atualmente, ele desempenha um papel crucial como Diretor de Operações de TI na Auma Tecnologia, onde lidera a entrega de soluções para o agronegócio. Com mais de 7 anos de experiência no Grupo Auma, Maykell demonstra habilidades sólidas em implementação de ERP, gestão de projetos, liderança técnica e soluções agro, tornando-o um ativo valioso na indústria de tecnologia.")}}
+                            () => { setModalText("Weber Ferreira 38 anos, co-fundador e sócio da Ferreira eng inteligente! Incorporadora e construtora. Começou com uma construção de uma casa de 85m em 2009 e em 2023 chega a mais de 10mil m2 entregues! Professor de química, motorista, vendedor, empreendedor, operário da construção civil,  idealizador, aprendiz na área de gestão eficaz!")}}
                           >
                         Conheça-me
                       </button>
