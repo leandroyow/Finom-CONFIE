@@ -381,6 +381,77 @@ export function Footer() {
                 </div>
               </div>
             </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="card">
+                <div className="d-flex">
+                  <div className="img-container">
+                    <img
+                      style={{ height: 144, width: 144 }}
+                      src="assets/vinicius.jpeg"
+                      className="card-img rounded-circle"
+                      alt="Vinicius Magalhães"
+                    />
+                  </div>
+                  <div style={{ width: 280, padding: 0 }} className="">
+                    <div className="card-body d-flex flex-column justify-content-between">
+                      <h5 className="card-title">Vinicius Magalhães</h5>
+                      <p className="card-text">
+                      Engenheiro de Projetos Fairtek
+                      </p>
+                                            <button 
+                      type="button"
+                       data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                         className="btn btn-outline-dark"
+                          id="vinicius-magalhaes"
+                          onClick={
+                            () => { setModalText("Engenheiro Eletricista formado pela FPM em 2016, com formação técnica em eletrônica pelo Senai em 2004. Atuo no setor de elétrica e eletrônica industrial desde 2005, acumulando experiência em áreas como instrumentação industrial, indústria alimentícia, fábrica de ração animal e fabricação de equipamentos Agroindustriais para produção de vapor e secagem de grãos. Atualmente, na Fairtek, onde trabalho no desenvolvimento de produtos que abrange metalurgia, transformação plástica e eletrônica aplicada, focado em criar oportunidades para o setor agro nacional.")}}
+                          >
+                        Conheça-me
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="card">
+                <div className="d-flex">
+                  <div className="img-container">
+                    <img
+                      style={{ height: 144, width: 144 }}
+                      src="assets/jose.jpeg"
+                      className="card-img rounded-circle"
+                      alt="José Machado"
+                    />
+                  </div>
+                  <div style={{ width: 280, padding: 0 }} className="">
+                    <div className="card-body d-flex flex-column justify-content-between">
+                      <h5 className="card-title">José Machado</h5>
+                      <p className="card-text">
+                      Diretor de Operações Fairtek
+                      </p>
+                                            <button 
+                      type="button"
+                       data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                         className="btn btn-outline-dark"
+                          id="jose-machado"
+                          onClick={
+                            () => { setModalText("Administrador de Empresas, formado pela UNIPAM em 2009, e Técnico em Agropecuária, formado em 1994 pela Escola Agrícola Afonso Queiroz. Atua no setor de suinocultura desde 1995, tendo experiência em todas as fases de produção como gerente de múltiplas granjas de suínos e desenvolvimento de projetos de suinocultura no período de 2010 a 2017 no Brasil e América do Sul. Coo fundador da Fairtek Sistema Inteligente SA no dia 04/01/2018 na cidade de Patos de Minas MG, atualmente conta com 22 colaboradores direto e mais 45 indiretos.")}}
+                          >
+                        Conheça-me
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+                            
+
+
+
             <SwiperSlide>
               <div  style={{color:"white !important", backgroundColor:"white !important", display:"none"}} className="card">
                 <div  className="d-flex">
