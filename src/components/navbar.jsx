@@ -2,8 +2,6 @@ import { useMediaQuery } from "react-responsive"
 
 export function Navbar() {
 
-const offcanvas = document.querySelector(".offcanvas-mobile-menu")
-const hideMenu = () => {offcanvas.classList.remove("show")}
   const isLessThan581 = useMediaQuery({
     query: '(min-width: 581px)'
   })
@@ -19,9 +17,9 @@ const hideMenu = () => {offcanvas.classList.remove("show")}
       />
   
       <div className="d-flex me-3">
-        <a onClick={hideMenu} className="fs-8 fw-medium nav-link" href="#programacao">Programação</a>
-        <a onClick={hideMenu} className="fs-8 fw-medium nav-link" href="#contato">Contato</a>
-        <a onClick={hideMenu} className="fs-8 fw-medium nav-link" href="#inscricao">Inscreva-se</a>
+        <a className="fs-8 fw-medium nav-link" href="#programacao">Programação</a>
+        <a className="fs-8 fw-medium nav-link" href="#contato">Contato</a>
+        <a className="fs-8 fw-medium nav-link" href="#inscricao">Inscreva-se</a>
       </div>
     </nav>
     )
@@ -44,7 +42,7 @@ const hideMenu = () => {offcanvas.classList.remove("show")}
   ></i>
  
 
-<div data-bs-backdrop="false" className="offcanvas offcanvas-end offcanvas-mobile-menu" data-bs-scroll="true" tabIndex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+<div data-bs-backdrop="true" className="offcanvas offcanvas-end offcanvas-mobile-menu" data-bs-scroll="true" tabIndex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
   <div className="offcanvas-header">
     <h5 className="offcanvas-title ms-3 fs-1" id="offcanvasWithBothOptionsLabel">
       Menu
@@ -53,9 +51,9 @@ const hideMenu = () => {offcanvas.classList.remove("show")}
   </div>
   <div className="offcanvas-body">
   <div className="d-flex flex-column">
-        <a onClick={hideMenu} className="fs-5 ms-3 fw-medium nav-link" href="#programacao">Programação</a>
-        <a onClick={hideMenu} className="fs-5 ms-3 fw-medium nav-link" href="#contato">Contato</a>
-        <a onClick={hideMenu} className="fs-5 ms-3 fw-medium nav-link" href="#inscricao">Inscreva-se</a>
+        <a className="fs-5 ms-3 fw-medium nav-link" href="#programacao">Programação</a>
+        <a className="fs-5 ms-3 fw-medium nav-link" href="#contato">Contato</a>
+        <a className="fs-5 ms-3 fw-medium nav-link" href="#inscricao">Inscreva-se</a>
       </div>
   </div>
 </div>

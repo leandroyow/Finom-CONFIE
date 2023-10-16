@@ -34,19 +34,3 @@ export default function App() {
   );
 }
 
-{/* <div className="container">
-      
-<div className="card">
-    <div className="d-flex">
-        <div style={{padding: 0, margin: 0}} className="">
-            <img style={{height:166,width:166}} src="assets/palestrante (1).jpeg" className="card-img rounded-circle" alt="Imagem Redonda"/>
-        </div>
-        <div style={{width: 300, padding: 0}} className="">
-            <div  className="card-body d-flex flex-column justify-content-between">
-                <h5  className="card-title">Maykell Pereira</h5>
-                <p className="card-text">Diretor de Operações de TI, na Auma Tecnologia</p>
-            </div>
-        </div>
-    </div>
-</div>
-</div> */}
