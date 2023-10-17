@@ -46,7 +46,39 @@ export function Footer() {
 
             <swiper-wrapper>
 
-
+            <SwiperSlide>
+              <div className="card">
+                <div className="d-flex">
+                  <div className="img-container">
+                    <img
+                      style={{ height: 144, width: 144 }}
+                      src="assets/tiago-bruno.jpeg"
+                      className="card-img rounded-circle"
+                      alt="Maykell Pereira"
+                    />
+                  </div>
+                  <div style={{ width: 280, padding: 0 }} >
+                    <div className="card-body d-flex flex-column justify-content-between">
+                      <h5 className="card-title">Tiago Bruno</h5>
+                        <p className="card-text">
+                        Engenheiro de Software, Google
+                        </p>
+                      <button 
+                      type="button"
+                       data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                         className="btn btn-outline-dark"
+                          id="tiago-bruno"
+                          onClick={
+                            () => { setModalText("Tiago Bruno Silva dos Reis é natural de Patos de Minas e graduado em Engenharia Física pela UFSCar. Já no período da graduação, interessou-se pela área de tecnologia e obteve destaque em competições internacionais de programação, o que o levou a complementar sua formação cursando o mestrado em Ciência da Computação na Unicamp. Posteriormente, passou a trabalhar no Google, onde atua como engenheiro de software desde 2018.")}}
+                          >
+                        Conheça-me
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
             <SwiperSlide>
               <div className="card">
                 <div className="d-flex">
