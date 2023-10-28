@@ -1,7 +1,9 @@
 import { useMediaQuery } from "react-responsive";
 import { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/navigation';
 
 export function Footer() {
 
@@ -12,12 +14,13 @@ export function Footer() {
 
   const swiperRef = useRef(null);
   
+
   useEffect(() => {
     
     const swiperContainer = swiperRef.current;
     Object.assignswiperContainer;
     swiperContainer.initialize();   
-
+    
   }, []);
 
   return (
@@ -40,11 +43,11 @@ export function Footer() {
        fs-4 text-center mt-5 mb-4">Palestrantes</h5>
       <div>
 
-      <swiper-container ref={swiperRef}  >
+      <swiper-container ref={swiperRef}>
         
-          <Swiper>
+          <Swiper navigation={true} modules={[Navigation]}>
 
-            <swiper-wrapper>
+            <swiper-wrapper >
 
             <SwiperSlide>
               <div className="card">
