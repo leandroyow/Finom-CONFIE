@@ -15,7 +15,7 @@ export function Programacao() {
               </div>
               <div className="carousel-item">
                 <img
-                  src="assets/dia-2.jpg"
+                  src="assets/pf.jpg"
                   className="d-block w-100"
                   alt="Programação Dia 2"
                 />

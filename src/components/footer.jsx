@@ -156,25 +156,23 @@ export function Footer() {
                       style={{ height: 144, width: 144 }}
                       src="assets/palestrante (3).jpeg"
                       className="card-img rounded-circle"
-                      alt="Rayanne Bárbara Pereira"
+                      alt="Afonso Machado Coelho"
                     />
                   </div>
                   <div style={{ width: 280, padding: 0 }} className="">
                     <div className="card-body d-flex flex-column justify-content-between">
-                      <h5 className="card-title">Rayanne Pereira</h5>
+                      <h5 className="card-title">Afonso M. Coelho</h5>
                       <p className="card-text">
-                        Coordenadora da Área de Assessoria Estratégica e
-                        Soluções Judiciais Cíveis e Trabalhistas, escritório
-                        Mírian Gontijo Advogados
+                      Gerente de RH e Segurança do Trabalho, Grupo Patense
                       </p>
                                             <button 
                       type="button"
                        data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop"
                          className="btn btn-outline-dark"
-                          id="rayanne-pereira"
+                          id="afonso-coelho"
                           onClick={
-                            () => { setModalText("Coordenadora da Área de Assessoria Estratégica e Soluções Judiciais Cíveis e Trabalhistas do escritório Mírian Gontijo Advogados. Rayanne é graduada em Direito pela Universidade de Patos de Minas – UNIPAM, inscrita na OAB/MG 153.308, e pós-graduada em Direito Processual Civil e em Direito das Famílias e Sucessões, pelo Centro Educacional Damásio de Jesus. Com quase dez anos de experiência na advocacia contenciosa e preventiva, com visão estratégica cível, trabalhista e empresarial, Rayanne possui ampla experiência  em jurídico corporativo, atuando, atualmente, no assessoramento preventivo e consultivo de empresas privadas e cooperativas agroindustriais e de crédito.")}}
+                            () => { setModalText("Bacharel em Direito pelo UNIPAM no ano de 2007.Advogado, inscrito na OAB/MG sob o n. 113.244, atuante desde o ano de 2008, sócio e fundador do Escritório Machado e Martins em Patos de Minas – MG. Pós-graduado em Gestão de Políticas Públicas – Universidade Federal de Uberlândia – UFU finalizado em 2012. Pós-graduado em Advocacia Trabalhista e Previdenciária – Universidade de Santa Cruz do Sul UNISC finalizado em 2019. MBA Executivo em Direito  Gestão e Business Law Gestão de assuntos jurídicos em ambientes corporativos - Fundação Getúlio Vargas  FGV – finalizado em fevereiro de 2023. Membro da Comissão de Honorários Advocatícios da OAB – Subseção Patos de Minas gestão 2016/2018. Conselheiro eleito da Ordem dos Advogados do Brasil – Subseção Patos de Minas  gestão 2022/2024. Servidor Público e Gerente do Setor de Licitações da FHEMIG entre os anos de 2008 e 2013. Gerente Jurídico do Grupo Patense Indústria de Rações Patense, desde setembro de 2013 até dias atuais. Membro do Comitê de Recursos Humanos do Sindicato Nacional da Alimentação Animal desde o ano de 2018 até dias atuais. Gerente de RH e Segurança do Trabalho do Grupo Patense Indústria de Rações Patense, desde dezembro de 2022 até dias atuais.")}}
                           >
                         Conheça-me
                       </button>
@@ -475,6 +473,39 @@ export function Footer() {
                           id="jose-machado"
                           onClick={
                             () => { setModalText("Administrador de Empresas, formado pela UNIPAM em 2009, e Técnico em Agropecuária, formado em 1994 pela Escola Agrícola Afonso Queiroz. Atua no setor de suinocultura desde 1995, tendo experiência em todas as fases de produção como gerente de múltiplas granjas de suínos e desenvolvimento de projetos de suinocultura no período de 2010 a 2017 no Brasil e América do Sul. Coo fundador da Fairtek Sistema Inteligente SA no dia 04/01/2018 na cidade de Patos de Minas MG, atualmente conta com 22 colaboradores direto e mais 45 indiretos.")}}
+                          >
+                        Conheça-me
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="card">
+                <div className="d-flex">
+                  <div className="img-container">
+                    <img
+                      style={{ height: 144, width: 144 }}
+                      src="assets/p1.jpeg"
+                      className="card-img rounded-circle"
+                      alt="Dr. Mateus Avelar"
+                    />
+                  </div>
+                  <div style={{ width: 280, padding: 0 }} className="">
+                    <div className="card-body d-flex flex-column justify-content-between">
+                      <h5 className="card-title">Dr. Mateus Avelar</h5>
+                      <p className="card-text">
+                      Defensor Público do Estado de Minas Gerais
+                      </p>
+                                            <button 
+                      type="button"
+                       data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                         className="btn btn-outline-dark"
+                          id="mateus-avelar"
+                          onClick={
+                            () => { setModalText("Mateus Nascimento Avelar, Defensor Público do Estado de Minas Gerais, titular da Defensoria Pública na área de Saúde. Defensor Público desde 2015. Fui analista do Ministério Público de MG entre 2008 e 2015, além de Procurador do Município de Paracatu em 2008. Formado em Direito pela Universidade Federal de Uberlândia - UFU.")}}
                           >
                         Conheça-me
                       </button>
